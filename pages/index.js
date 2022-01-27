@@ -153,7 +153,13 @@ export default function PaginaInicial() {
                 borderRadius: '50%',
                 marginBottom: '16px',
               }}
-              src={`https://github.com/${username}.png`}
+              src={
+                username.length > 2
+                ?`https://github.com/${username}.png`
+                :`https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3648106f-36c8-4a88-8139-40330bb03b0f/de9hoaj-d521097d-29e0-4bd7-8c37-b67e4445d684.png/v1/fill/w_512,h_512,strp/outer_wilds___dock_icon_by_courage_and_feith_de9hoaj-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvMzY0ODEwNmYtMzZjOC00YTg4LTgxMzktNDAzMzBiYjAzYjBmXC9kZTlob2FqLWQ1MjEwOTdkLTI5ZTAtNGJkNy04YzM3LWI2N2U0NDQ1ZDY4NC5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.6a7k5cqWBRotbTdayuf9mxYlrVAwkRO0UtZySK00NYI`
+
+              }
+
             />
             <Text
               variant="body4"
